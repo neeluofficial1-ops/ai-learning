@@ -8,8 +8,9 @@ x_train , x_test , y_train , y_test = train_test_split(
 )
 
 params = {
-    "max_depth":[5 , 10 , 15],
-    "n_estimators":[20 , 50]
+    "max_depth":[10 , 15 , 20],
+    "n_estimators":[50 , 100],
+    "min_samples_leaf":[1 , 3],
 }
 
 grid = GridSearchCV(
