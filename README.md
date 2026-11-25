@@ -24,3 +24,18 @@ python , numpy , pandas , Matplotlib , scikit-learn , pipelines , streamlit , gi
 ## How to Run
 pip install -r requirements.txt
 pyhton -m streamlit run app.py
+
+## Project 2: California House Price Predictor
+
+- Dataset: California housing (sklearn), 20,640 rows, 8 features
+- Model: Random Forest Regressor, tuned with GridSearchCV (max_depth 20, n_estimators 100, min_samples_leaf 1)
+- Test R2: 0.805
+- Most important feature: MedInc (median income)
+- Streamlit app (app_house.py): 8 sliders, predicts house price in dollars
+
+### How to run
+1. Run `python day19_save.py` first (creates house_model.pkl; the model file is not uploaded because it is in .gitignore)
+2. Run `python -m streamlit run app_house.py`
+
+### App Screenshot
+![House Price App](house_app_screenshot.png)
